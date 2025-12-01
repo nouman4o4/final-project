@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trafly</title>
+    <link rel="stylesheet" href="travel_recommendation.css" />
+  </head>
+  <body>
+    <header class="hero" id="Home">
+      <nav>
+        <div class="heading">
+          <h1>Trafly</h1>
+        </div>
+        <div class="nav-links">
+          <a href="#Home">Home</a>
+          <a href="#About">About us</a>
+          <a href="#Contact">Contact us</a>
+        </div>
+        <form
+          class="search"
+          action="#"
+          method="get"
+          id="searchForm"
+          aria-label="Destination search"
+        >
+          <input
+            type="text"
+            name="searchBar"
+            id="searchBar"
+            placeholder="Enter a destination or keyword"
+          />
+          <button type="submit" class="search-btn primary">Search</button>
+          <button type="reset" class="search-btn ghost">Clear</button>
+        </form>
+      </nav>
+      <div id="recommendationCards" class="recommendation-cards"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Smart travel inspiration</p>
+        <h2>Travel recommendations that blend local insight with data.</h2>
+        <p>
+          Trafly surfaces boutique stays, mindful journeys, and little-known
+          gems that match your vibe. Tell us how you want to feel on your next
+          escape, and we will craft the perfect path.
+        </p>
+        <div class="hero-actions">
+          <a href="#Contact" class="primary-btn">Plan a trip</a>
+          <a href="#About" class="ghost-btn">Meet the team</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section" aria-labelledby="why">
+        <div class="section-heading">
+          <p class="eyebrow">Why Trafly</p>
+          <h3 id="why">Curated travel recommendations without the guesswork</h3>
+          <p>
+            We learn from millions of journeys, sustainability indicators, and
+            on-the-ground experts to recommend trips that feel personal from the
+            first tap.
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h4>Human + AI curation</h4>
+            <p>
+              A hybrid approach pairs machine learning suggestions with editors
+              who truly know each region.
+            </p>
+          </article>
+          <article class="card">
+            <h4>Seasonal timing</h4>
+            <p>
+              Dynamic insights highlight the best months for each
+              recommendation, weather surprises included.
+            </p>
+          </article>
+          <article class="card">
+            <h4>Responsible travel</h4>
+            <p>
+              We spotlight eco-certified partners and low-impact experiences so
+              you can explore with intention.
+            </p>
+          </article>
+          <article class="card">
+            <h4>Context that matters</h4>
+            <p>
+              Bite-sized cultural notes, packing tips, and budget cues keep you
+              confident before you even depart.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="About" class="section" aria-labelledby="about">
+        <div class="section-heading">
+          <p class="eyebrow">About us</p>
+          <h3 id="about">The crew dreaming up Trafly</h3>
+          <p>
+            We're a remote-first studio of explorers, product thinkers, and
+            journalists who built Trafly after hundreds of trips that felt more
+            chaotic than calm. Our promise is to design tools that celebrate
+            place, people, and pace.
+          </p>
+        </div>
+        <div class="about-team">
+          <article class="team-member">
+            <h4>Mahmoud Ahmed</h4>
+            <span>Experience Lead</span>
+            <p>I made all this stuff.</p>
+          </article>
+        </div>
+      </section>
+      <section id="Contact" class="section" aria-labelledby="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact us</p>
+          <h3 id="contact">Share your travel wishlist</h3>
+          <p>
+            Send a note about dream destinations, team retreats, or product
+            questions. We respond within two business days.
+          </p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-details">
+            <h4>Email</h4>
+            <p>mahmoud.ahmed.25.9.24@gmail.com</p>
+            <h4 style="margin-top: 1rem">Studio hours</h4>
+            <p>Mon–Fri · 9am – 6pm CET</p>
+            <h4 style="margin-top: 1rem">Offices</h4>
+            <p>Alexandria</p>
+          </div>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Alex Traveler"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="alex@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Tell us about the journey you're planning..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn primary-btn">
+              Submit request
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      © <span id="year"></span> Trafly · Crafted for explorers everywhere.
+    </footer>
+    <script src="travel_recommendation.js"></script>
+  </body>
+</html>
